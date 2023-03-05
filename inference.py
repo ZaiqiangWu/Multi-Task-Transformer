@@ -210,5 +210,6 @@ if __name__ == "__main__":
 
     # task = args.task
     tasks = ['semseg', 'normals', 'sal', 'edge', 'human_parts']
-    for task in tasks:
-        infer(task)
+    for i in range(10):
+        for task in tasks:
+            infer(task)
